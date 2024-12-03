@@ -20,8 +20,9 @@
  *    getIntervalArray(0, 100) => [ 0, 1, 2, ..., 100 ]
  *    getIntervalArray(3, 3) => [ 3 ]
  */
-function getIntervalArray(/* start, end */) {
-  throw new Error('Not implemented');
+function getIntervalArray(start, end) {
+  // throw new Error('Not implemented');
+  return Array.from({ length: end - start + 1 }, (_, i) => start + i);
 }
 
 /**
@@ -53,8 +54,9 @@ function sumArrays(/* arr1, arr2 */) {
  *    findElement(['Array', 'Number', 'string'], 'Date') => -1
  *    findElement([0, 1, 2, 3, 4, 5], 5) => 5
  */
-function findElement(/* arr, value */) {
-  throw new Error('Not implemented');
+function findElement(arr, value) {
+  return arr.indexOf(value);
+  // throw new Error('Not implemented');
 }
 
 /**
@@ -73,6 +75,9 @@ function findElement(/* arr, value */) {
  */
 function findAllOccurrences(/* arr, item */) {
   throw new Error('Not implemented');
+  // const nik1 = [];
+  // const nik = arr.filter(item);
+  // return nik.length;
 }
 
 /**
@@ -87,8 +92,10 @@ function findAllOccurrences(/* arr, item */) {
  *    removeFalsyValues([ 1, 2, 3, 4, 5, 'false' ]) => [ 1, 2, 3, 4, 5, 'false' ]
  *    removeFalsyValues([ false, 0, NaN, '', undefined ]) => [ ]
  */
-function removeFalsyValues(/* arr */) {
-  throw new Error('Not implemented');
+function removeFalsyValues(arr) {
+  // throw new Error('Not implemented');
+  // const kos9 = []
+  return arr.filter((el) => Boolean(el) === true);
 }
 
 /**
@@ -103,6 +110,7 @@ function removeFalsyValues(/* arr */) {
  */
 function getStringsLength(/* arr */) {
   throw new Error('Not implemented');
+  // return arr[1].length;
 }
 
 /**
@@ -120,7 +128,8 @@ function getStringsLength(/* arr */) {
  *   getAverage([ 2, 3, 3 ])  => 2,67
  */
 function getAverage(/* arr */) {
-  throw new Error('Not implemented');
+  // const sum = arr.reduce((a, b) => a + b, 0);
+  // return sum / 2;
 }
 
 /**
